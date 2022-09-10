@@ -1,15 +1,12 @@
 import {Component} from 'react'
 
 import Popup from 'reactjs-popup'
-
 import 'reactjs-popup/dist/index.css'
 
 import {RiCloseLine} from 'react-icons/ri'
 
 import ScoreView from '../ScoreView'
-
 import GameResultsView from '../GameResultsView'
-
 import './index.css'
 
 import {

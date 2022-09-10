@@ -6,13 +6,15 @@ export const ScoreContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  width: 80%;
-  border-style: solid;
-  border-color: #ffffff;
-  border-width: 2px;
+  width: 80vw;
+  height: 150px;
+  border: 2px solid #ffffff;
   border-radius: 10px;
   background-color: transparent;
-  margin-top: 2%;
+  margin-top: 20px;
+  @media screen and (max-width: 576px) {
+    height: 120px;
+  }
 `
 export const ScoreNameContainer = styled.div`
   display: flex;
@@ -20,40 +22,34 @@ export const ScoreNameContainer = styled.div`
 `
 export const ScoreName = styled.h1`
   color: white;
-  font-size: 20px;
+  font-size: 26px;
   font-family: 'Bree Serif';
-  margin-top: 0px;
-  margin-bottom: 0px;
   @media screen and (max-width: 576px) {
-    font-size: 14px;
+    font-size: 20px;
   }
 `
-export const ScoreBoard = styled(ScoreNameContainer)`
-  background-color: white;
-  width: 15%;
-  height: 100%;
-  border-radius: 10px;
+export const ScoreBoard = styled.div`
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  width: 150px;
+  height: 120px;
+  border-radius: 10px;
   @media screen and (max-width: 576px) {
-    width: 25%;
+    height: 100px;
   }
 `
 export const ScoreHeading = styled.p`
   color: #223a5f;
   font-size: 20px;
+  font-weight: bold;
   margin-bottom: 0px;
-  @media screen and (max-width: 576px) {
-    font-size: 16px;
-  }
 `
 export const ScoreResult = styled.p`
   color: #223a5f;
-  font-size: 42px;
-  margin-top: 0px;
+  font-size: 30px;
   font-family: 'Roboto';
-  @media screen and (max-width: 576px) {
-    font-size: 24px;
-    margin-top: 10px;
-  }
+  margin-top: 5px;
 `
